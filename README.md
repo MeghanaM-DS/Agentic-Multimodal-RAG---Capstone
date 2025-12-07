@@ -1,4 +1,4 @@
-# 🏥 Agentic Multimodal RAG for Healthcare (CT/MRI Multimodal Retrieval + LLM Summarization)
+# Agentic Multimodal RAG for Healthcare (CT/MRI Multimodal Retrieval + LLM Summarization)
 
 A research-focused Retrieval-Augmented Generation (RAG) system for CT and MRI medical imaging, combining:
 
@@ -10,14 +10,14 @@ A research-focused Retrieval-Augmented Generation (RAG) system for CT and MRI me
 - A clean Streamlit clinical-style UI
 - A FastAPI backend serving retrieval + RAG endpoints
 
----
-
 ## University
 University of Arizona
 
 ## Course:
 INFO 698 - Capstone Project
+
 Mentor: Dr. Eung-Joo Lee
+
 Project Members: 
 - Meghana Maringanti
 - Manglam Srivastav
@@ -25,14 +25,14 @@ Project Members:
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This system is for **research and educational use only**.  
 It is **NOT** a diagnostic tool and must **NOT** be relied upon for clinical decision-making.
 
 ---
 
-## 📘 Overview
+## Overview
 
 This project helps clinicians, researchers, and students:
 
@@ -42,7 +42,7 @@ This project helps clinicians, researchers, and students:
 - Feed retrieved cases into an LLM
 - Generate a **safe, pattern-based summary** of what the retrieved cases show
 
-### 🔍 Example use cases
+### Example use cases
 
 - “What patterns appear in cases similar to this uploaded CT image?”
 - “Summarize typical findings for ovarian torsion on CT based on retrieved examples.”
@@ -53,7 +53,7 @@ It only summarizes **patterns observed in retrieved cases**.
 
 ---
 
-## 🧠 High-Level Architecture
+## High-Level Architecture
 
 ```text
 User (Streamlit UI)
@@ -78,7 +78,7 @@ Displayed in UI
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 rag/
@@ -112,7 +112,7 @@ rag/
 
 ---
 
-## 🔧 Prerequisites
+## Prerequisites
 
 ### 1. Python 3.9+
 
@@ -164,7 +164,7 @@ ollama serve
 ollama pull gemma3:4b
 ```
 
-## 🚀 Running the Backend (FastAPI)
+## Running the Backend (FastAPI)
 
 ```bash
 uvicorn app:app --reload
@@ -173,7 +173,7 @@ uvicorn app:app --reload
 API Docs:
 http://127.0.0.1:8000/docs
 
-## 🖼️ Running the UI (Streamlit)
+## Running the UI (Streamlit)
 
 ```bash
 streamlit run streamlit_app.py
@@ -190,7 +190,7 @@ You will see:
 - Retrieved context
 - Raw FAISS results
 
-## 📡 API Endpoints (Summary)
+## API Endpoints (Summary)
 
 ### Health Check
 
@@ -231,7 +231,7 @@ POST /metrics/save           # Save metrics to disk
 POST /metrics/reset          # Clear all metrics
 ```
 
-## 🔍 How Retrieval Works
+## How Retrieval Works
 
 1. Image embeddings
 
@@ -294,7 +294,7 @@ Ensures:
 
 - Returned to Streamlit UI.
 
-## 🧪 API Testing Examples
+## API Testing Examples
 
 ### Text Retrieval
 
@@ -326,7 +326,7 @@ POST /rag/query
 
 Upload an image and pass a query.
 
-## 🎨 Streamlit UI Features
+## Streamlit UI Features
 
 ### RAG Query Tab
 
@@ -372,7 +372,7 @@ Upload an image and pass a query.
   - Save summary to disk
   - Export logs
 
-## 📊 Metrics & Monitoring
+## Metrics & Monitoring
 
 The system includes comprehensive metrics tracking for:
 
@@ -425,7 +425,7 @@ curl http://127.0.0.1:8000/metrics/summary
 
 ---
 
-## 📊 Evaluation System
+## Evaluation System
 
 ### Comprehensive Metrics
 
@@ -523,7 +523,7 @@ logs/evaluation/                # Evaluation logs
 
 ---
 
-## 🛠️ Future Extensions
+## Future Extensions
 
 - Add X-ray modality
 - Cross-modal retrieval (CT ↔ MRI ↔ X-ray)
@@ -536,7 +536,7 @@ logs/evaluation/                # Evaluation logs
 - A/B testing framework for model comparison
 - Prometheus/Grafana integration
 
-## 🏁 Final Notes
+## Final Notes
 
 This project provides a powerful platform for:
 
