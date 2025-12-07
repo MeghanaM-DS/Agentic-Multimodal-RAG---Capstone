@@ -1,6 +1,4 @@
-# Agentic-Multimodal-RAG---Capstone
-
-# 🏥 Medical Imaging RAG System (CT/MRI Multimodal Retrieval + LLM Summarization)
+# 🏥 Agentic Multimodal RAG for Healthcare (CT/MRI Multimodal Retrieval + LLM Summarization)
 
 A research-focused Retrieval-Augmented Generation (RAG) system for CT and MRI medical imaging, combining:
 
@@ -11,6 +9,19 @@ A research-focused Retrieval-Augmented Generation (RAG) system for CT and MRI me
 - Support for OpenRouter, OpenAI, and local Ollama models
 - A clean Streamlit clinical-style UI
 - A FastAPI backend serving retrieval + RAG endpoints
+
+---
+
+## University
+University of Arizona
+
+## Course:
+INFO 698 - Capstone Project
+Mentor: Dr. Eung-Joo Lee
+Project Members: 
+- Meghana Maringanti
+- Manglam Srivastav
+- Abhimanyu Pandey
 
 ---
 
